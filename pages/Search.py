@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from Locator.locator import Locate
 
 class Search:
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
         self.lp = Locate()
 
@@ -16,4 +16,4 @@ class Search:
 
         # Press ENTER from keyboard
         search_box.send_keys(Keys.ENTER)
-        time.sleep(1)
+        time.sleep(3)
